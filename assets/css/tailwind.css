@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-50;
+}
+
+@layer components {
+  .btn {
+    @apply bg-[#12b488] text-white px-3 py-2 rounded-md text-sm;
+  }
+
+  .enhancement {
+    @apply text-[#00dc82] bg-[#00dc82]  border-[#00dc82];
+  }
+
+  .cat-ui {
+    @apply text-[#ffba08] bg-[#ffba08]  border-[#ffba08];
+  }
+  .cat-ux {
+    @apply text-[#5aff15] bg-[#5aff15]  border-[#5aff15];
+  }
+
+  .cat-feature {
+    @apply text-[#00c8dc] bg-[#00c8dc]  border-[#00c8dc];
+  }
+  .cat-bug {
+    @apply text-[#e63462] bg-[#e63462]  border-[#e63462];
+  }
+}
