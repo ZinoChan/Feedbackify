@@ -14,17 +14,17 @@ body {
     @apply text-[#00dc82] bg-[#00dc82]  border-[#00dc82];
   }
 
-  .cat-ui {
+  .ui {
     @apply text-[#ffba08] bg-[#ffba08]  border-[#ffba08];
   }
-  .cat-ux {
+  .ux {
     @apply text-[#5aff15] bg-[#5aff15]  border-[#5aff15];
   }
 
-  .cat-feature {
+  .feature {
     @apply text-[#00c8dc] bg-[#00c8dc]  border-[#00c8dc];
   }
-  .cat-bug {
+  .bug {
     @apply text-[#e63462] bg-[#e63462]  border-[#e63462];
   }
 }
