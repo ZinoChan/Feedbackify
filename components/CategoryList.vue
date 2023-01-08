@@ -1,0 +1,17 @@
+<template>
+  <div class="bg-white rounded-lg p-6 shadow-md">
+    <div class="flex space-y-3 flex-wrap">
+      <Category v-for="cat in categories" :category="cat" />
+    </div>
+  </div>
+</template>
+
+<script lang="ts">
+export default {
+  data() {
+    return {
+      categories: ["enhancement", "feature", "bug", "ui", "ux"],
+    };
+  },
+};
+</script>
