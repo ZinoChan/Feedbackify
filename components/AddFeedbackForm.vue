@@ -26,10 +26,11 @@
         id="countries"
         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded block w-full p-2.5 focus:outline-none focus:border-teal-400"
       >
-        <option>United States</option>
-        <option>Canada</option>
-        <option>France</option>
-        <option>Germany</option>
+        <option>enhancement</option>
+        <option>ui</option>
+        <option>ux</option>
+        <option>bug</option>
+        <option>feature</option>
       </select>
     </div>
     <div class="mb-8">
