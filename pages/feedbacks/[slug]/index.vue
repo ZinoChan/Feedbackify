@@ -3,7 +3,7 @@
     <div class="items-start grid grid-cols-4 gap-8">
       <div>
         <h1>{{ slug }}</h1>
-        <ProductCard />
+        <ProductCard :title="project.name" />
         <CategoryList />
       </div>
       <div class="col-span-3">
