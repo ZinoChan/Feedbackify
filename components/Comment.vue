@@ -11,7 +11,7 @@
             class="mr-2 w-6 h-6 rounded-full"
             src="https://flowbite.com/docs/images/people/profile-picture-2.jpg"
             alt="Michael Gough"
-          />Michael Gough
+          />{{ comment.user.name }}
         </p>
         <p class="text-sm text-gray-600 dark:text-gray-400">
           <time pubdate datetime="2022-02-08" title="February 8th, 2022"
@@ -62,9 +62,7 @@
       </div>
     </footer>
     <p class="text-gray-500 text-sm dark:text-gray-400">
-      Very straight-to-point article. Really worth time reading. Thank you! But
-      tools are just the instruments for the UX designers. The knowledge of the
-      design tools are as important as the creation of the design strategy.
+      {{ comment.content }}
     </p>
     <div class="flex items-center mt-4 space-x-4">
       <button
@@ -77,3 +75,7 @@
     </div>
   </article>
 </template>
+
+<script setup>
+const { comment } = defineProps(["comment"]);
+</script>
