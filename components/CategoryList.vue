@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white rounded-lg p-6 shadow-md">
-    <div class="flex space-y-3 flex-wrap">
+    <div class="flex gap-y-3 flex-wrap align-baseline">
       <Category v-for="cat in categories" :category="cat" />
     </div>
   </div>
