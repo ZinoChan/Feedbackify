@@ -12,6 +12,7 @@
         type="text"
         id="base-input"
         placeholder="Add a short, descriptive headline"
+        :value="feedback.title"
         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded block w-full p-2.5 focus:outline-none focus:border-teal-400"
       />
     </div>
@@ -24,6 +25,7 @@
       </label>
       <select
         id="countries"
+        :value="feedback.category"
         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded block w-full p-2.5 focus:outline-none focus:border-teal-400"
       >
         <option>enhancement</option>
@@ -43,6 +45,7 @@
       <textarea
         id="message"
         rows="5"
+        :value="feedback.description"
         placeholder="Include any specific comments on what should be improved, added, etc."
         class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded border border-gray-300 focus:outline-none focus:border-teal-400"
       ></textarea>
@@ -63,3 +66,8 @@
     </div>
   </form>
 </template>
+
+<script setup>
+const { slug, feedbackId } = useRoute().params;
+const { data: feedback } = useFetch(`/api/project/${slug}/${feedbackId}`);
+</script>
