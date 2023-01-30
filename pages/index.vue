@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Home</h2>
+    <h2 class="font-bold">All Projects</h2>
     <div class="grid grid-cols-4 gap-6">
       <ProjectCard v-for="project in projects" :project="project" />
     </div>
