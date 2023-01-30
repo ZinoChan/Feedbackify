@@ -19,7 +19,9 @@
     <div class="mt-auto flex justify-between items-center">
       <NuxtLink :to="`/feedbacks/${project.slug}`">
         <div class="flex space-x-3 text-sm font-bold text-gray-600">
-          <span>34</span>
+          <span>
+            {{ project?.feedbacks?.length || 0 }}
+          </span>
           <span>feedbacks</span>
         </div>
       </NuxtLink>
