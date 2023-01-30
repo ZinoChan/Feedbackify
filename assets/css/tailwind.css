@@ -4,6 +4,7 @@
 
 body {
   @apply bg-[#f2f4ff];
+  font-family: "Jost", sans-serif;
 }
 
 @layer components {
