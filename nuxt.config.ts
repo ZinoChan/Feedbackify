@@ -7,7 +7,8 @@ export default defineNuxtConfig({
       {
         googleFonts: {
           families: {
-            Jost: true,
+            Padauk: true,
+            Poppins: true,
           },
         },
       },
