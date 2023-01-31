@@ -3,8 +3,13 @@
 @tailwind utilities;
 
 body {
-  @apply bg-[#f2f4ff];
-  font-family: "Jost", sans-serif;
+  font-family: "Padauk", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
 }
 
 @layer components {
