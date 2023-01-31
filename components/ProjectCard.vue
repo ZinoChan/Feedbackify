@@ -1,33 +1,40 @@
 <template>
   <div
-    class="bg-white p-6 flex flex-col rounded-md shadow border border-t-4 border-teal-300"
+    class="bg-dark2 border border-gray2 shadow-md shadow-dark2 overflow-hidden p-6 flex flex-col rounded-md relative"
   >
-    <h3 class="font-bold text-2xl uppercase text-gray-600 mb-4">
+    <div
+      class="absolute bg-primary1 bg-gradient-to-r from-primary1 to-primary2 top-0 left-0 w-full h-1"
+    ></div>
+    <h3
+      class="font-bold text-2xl text-transparent uppercase bg-clip-text bg-gradient-to-r from-primary1 to-primary2 mb-4"
+    >
       {{ project.name }}
     </h3>
-    <p class="mb-4 capitalize text-sm text-gray-400">
+    <p class="mb-4 capitalize text-sm text-gray1">
       {{ project.description }}
     </p>
-    <div class="flex flex-wrap mb-4">
+    <div class="flex flex-wrap gap-x-0.5 gap-y-1 mb-4">
       <span
         v-for="tool in project.tools"
-        class="p-1 mr-1 mb-1 rounded-md text-xs bg-teal-50 text-teal-400 font-bold"
+        class="p-1 mr-1 mb-1 rounded text-xs text-primary2 border border-primary2 font-bold"
       >
         {{ tool }}
       </span>
     </div>
     <div class="mt-auto flex justify-between items-center">
       <NuxtLink :to="`/feedbacks/${project.slug}`">
-        <div class="flex space-x-3 text-sm font-bold text-gray-600">
+        <div
+          class="flex space-x-1 text-sm font-bold text-primary1 hover:text-primary2 hover:underline"
+        >
           <span>
             {{ project?.feedbacks?.length || 0 }}
           </span>
           <span>feedbacks</span>
         </div>
       </NuxtLink>
-      <div class="text-gray-600 space-x-3">
+      <div class="text-primary1 space-x-3">
         <NuxtLink
-          class="hover:text-cyan-500 flex items-center space-x-2"
+          class="hover:text-primary2 hover:underline flex items-center space-x-2"
           :to="project.linkToPage"
           target="_blank"
         >
