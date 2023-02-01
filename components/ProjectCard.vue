@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-dark2 border border-gray2 shadow-md shadow-dark2 overflow-hidden p-6 flex flex-col rounded-md relative"
+    class="bg-dark2 shadow-md overflow-hidden p-6 flex flex-col rounded-md relative"
   >
     <div
       class="absolute bg-primary1 bg-gradient-to-r from-primary1 to-primary2 top-0 left-0 w-full h-1"
@@ -13,10 +13,10 @@
     <p class="mb-4 capitalize text-sm text-gray1">
       {{ project.description }}
     </p>
-    <div class="flex flex-wrap gap-x-0.5 gap-y-1 mb-4">
+    <div class="flex flex-wrap gap-x-1 gap-y-2 mb-4">
       <span
         v-for="tool in project.tools"
-        class="p-1 mr-1 mb-1 rounded text-xs text-primary2 border border-primary2 font-bold"
+        class="p-1 rounded text-xs text-primary2 border border-primary2 font-semibold"
       >
         {{ tool }}
       </span>
