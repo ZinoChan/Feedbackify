@@ -14,9 +14,15 @@
           >
         </div>
         <div class="flex md:order-2">
-          <button type="button" class="btn-primary">add feedback</button>
+          <NuxtLink :to="`/feedbacks/${slug}/addFeedback`">
+            <button type="button" class="btn-primary">add feedback</button>
+          </NuxtLink>
         </div>
       </div>
     </nav>
   </div>
 </template>
+
+<script setup>
+const { slug } = defineProps(["slug"]);
+</script>
