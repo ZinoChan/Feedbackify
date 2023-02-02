@@ -9,7 +9,7 @@ body {
 
 @layer components {
   .btn-primary {
-    @apply text-white bg-gradient-to-r from-green-400 to-teal-400  hover:bg-teal-400 font-bold rounded-md px-5 py-2.5 text-center;
+    @apply text-white bg-primary2 hover:bg-opacity-70 transition-all  font-bold rounded px-5 py-1.5 text-center;
   }
   .enhancement {
     @apply text-[#00dc82] bg-[#00dc82]  border-[#00dc82];
