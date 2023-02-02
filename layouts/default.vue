@@ -1,11 +1,14 @@
 <template>
   <div>
     <header class="shadow-sm bg-dark2 shadow-dark2 border-b border-gray2">
-      <nav class="container mx-auto p-4 flex justify-between">
-        <NuxtLink to="/" class="font-bold">Rebyu</NuxtLink>
-        <ul class="flex gap-4">
-          <li><NuxtLink to="/">Projects</NuxtLink></li>
-          <li><NuxtLink to="/roadmap">Roadmap</NuxtLink></li>
+      <nav class="container mx-auto p-4 flex items-center justify-between">
+        <NuxtLink to="/" class="font-bold text-white">Rebyu</NuxtLink>
+        <ul class="flex items-center gap-4">
+          <li>
+            <NuxtLink to="/roadmap">
+              <button class="btn btn-primary">login</button>
+            </NuxtLink>
+          </li>
         </ul>
       </nav>
     </header>
