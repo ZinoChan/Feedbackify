@@ -6,7 +6,7 @@
         <CategoryList />
       </div>
       <div class="col-span-3">
-        <FeedbackHeader :slug="project.slug" />
+        <FeedbackHeader :slug="projectData.project.slug" />
         <FeedBackCard
           v-for="feedback in projectData.feedbacks"
           :feedback="feedback"
