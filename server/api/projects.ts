@@ -1,3 +1,3 @@
-import data from "~~/data";
+import { projects } from "~~/data/projects";
 
-export default defineEventHandler(() => data);
+export default defineEventHandler(() => Object.values(projects));
