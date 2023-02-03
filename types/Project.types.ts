@@ -1,4 +1,6 @@
-import { IFeedback } from "./Feedback.types";
+export interface IProjects {
+  [slug: string]: IProject;
+}
 
 export interface IProject {
   id: string;
@@ -10,5 +12,4 @@ export interface IProject {
   linkToSrc: string;
   description: string;
   tools: string[];
-  feedbacks: IFeedback[];
 }
