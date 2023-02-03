@@ -1,4 +1,6 @@
-import { IComment } from "./Comment.types";
+export interface IFeedbacks {
+  [slug: string]: IFeedback[];
+}
 
 export interface IFeedback {
   id: number;
@@ -7,5 +9,4 @@ export interface IFeedback {
   upvotes: number;
   status: string;
   description: string;
-  comments: IComment[];
 }
