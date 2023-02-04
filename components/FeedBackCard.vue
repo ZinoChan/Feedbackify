@@ -17,12 +17,12 @@
             <Category :category="feedback?.category" />
           </div>
         </div>
-        <CommentIcon :commentsCount="feedback?.comments?.length" />
+        <CommentIcon :commentsCount="commentsCount" />
       </div>
     </div>
   </NuxtLink>
 </template>
 <script setup>
-const { feedback } = defineProps(["feedback"]);
+const { feedback, commentsCount } = defineProps(["feedback", "commentsCount"]);
 const params = useRoute().params;
 </script>
