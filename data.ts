@@ -236,6 +236,7 @@ export default [
         status: "suggestion",
         description:
           "Challenge preview images are missing when you apply a filter.",
+        comments: [],
       },
     ],
   },
@@ -378,6 +379,7 @@ export default [
         status: "in-progress",
         description:
           "Screenshots of solutions with animations don’t display correctly.",
+        comments: [],
       },
       {
         id: 12,
