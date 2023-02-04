@@ -25,13 +25,16 @@
       </div>
     </div>
 
-    <FeedBackCard :feedback="feedback" />
-    <CommentList :comments="feedback.comments" />
+    <FeedBackCard
+      :feedback="feedbackData?.feedback"
+      :commentsCount="feedbackData?.comments?.length || 0"
+    />
+    <CommentList :comments="feedbackData?.comments" />
     <AddComment />
   </div>
 </template>
 
 <script setup>
 const { slug, feedbackId } = useRoute().params;
-const { data: feedback } = useFetch(`/api/project/${slug}/${feedbackId}`);
+const { data: feedbackData } = useFetch(`/api/project/${slug}/${feedbackId}`);
 </script>
