@@ -27,7 +27,7 @@
           class="flex space-x-1 text-sm font-bold text-primary1 hover:text-primary2 hover:underline"
         >
           <span>
-            {{ project?.feedbacks?.length || 0 }}
+            {{ project?.feedbacksCount || 0 }}
           </span>
           <span>feedbacks</span>
         </div>
