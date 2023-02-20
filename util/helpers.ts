@@ -42,3 +42,13 @@ export function randomColor() {
     Math.floor(Math.random() * values[0].length)
   ];
 }
+
+export const deserializeData = (data: any) =>
+  data.map((val: any) =>
+    JSON.parse(val, (key, value) => {
+      if (typeof value === "string" && value.startsWith("BIGINT::")) {
+        return BigInt(value.substr(8));
+      }
+      return value;
+    })
+  );
