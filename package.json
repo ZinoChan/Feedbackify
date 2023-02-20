@@ -10,12 +10,15 @@
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.2.0",
     "nuxt": "3.0.0",
+    "nuxt-icon": "^0.1.8",
     "prisma": "^4.10.1"
   },
   "dependencies": {
     "@nuxtjs/google-fonts": "^3.0.0-1",
     "@prisma/client": "4.10.1",
     "@supabase/supabase-js": "^2.8.0",
+    "@types/json-bigint": "^1.0.1",
+    "json-bigint": "^1.0.0",
     "vue-final-modal": "3"
   }
 }
