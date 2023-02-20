@@ -16,7 +16,6 @@
   "dependencies": {
     "@nuxtjs/google-fonts": "^3.0.0-1",
     "@prisma/client": "4.10.1",
-    "@supabase/supabase-js": "^2.8.0",
     "@types/json-bigint": "^1.0.1",
     "json-bigint": "^1.0.0",
     "vue-final-modal": "3"
