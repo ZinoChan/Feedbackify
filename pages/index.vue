@@ -7,8 +7,21 @@
   </div>
 </template>
 
-<script setup>
-const { data: projects } = await useFetch("/api/projects");
+<script>
+import { deserializeData } from "~~/util/helpers";
+
+export default {
+  data() {
+    return {
+      projects: null,
+    };
+  },
+  async mounted() {
+    const response = await fetch("/api/projects");
+    const json = await response.json();
+    this.projects = deserializeData(json);
+  },
+};
 </script>
 
 <style scoped>
