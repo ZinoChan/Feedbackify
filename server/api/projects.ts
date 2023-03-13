@@ -1,7 +1,7 @@
 import prisma from "~~/lib/prismaClient";
 
 export default defineEventHandler(async () => {
-  const data = await prisma.projects.findMany();
+  const data = await prisma.project.findMany();
 
   const projects = data.map((val) =>
     JSON.stringify(val, (key, value) =>
